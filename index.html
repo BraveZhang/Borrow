@@ -1,0 +1,425 @@
+﻿<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+<head>
+    <title>借钱公约网</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="favicon.ico">
+    <!---<link href='http://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>--->
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="assets/plugins/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
+    <link rel="stylesheet" href="assets/plugins/animate-css/animate.min.css">
+    <link rel="stylesheet" href="assets/plugins/flexslider/flexslider.css">
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="home-page">
+
+    <!-- * Facebook Like button script starts -->
+    <div id="fb-root"></div>
+
+    <!-- * Facebook Like button script ends -->
+
+    <div class="wrapper">
+        <!-- ******HEADER****** -->
+        <header id="header" class="header">
+            <div class="container">
+                <h1 class="logo pull-left">
+                    <a href="index.html">
+                        <span class="logo-title">借钱公约网</span>
+                    </a>
+                </h1>
+                <!--//logo-->
+                <nav id="main-nav" class="main-nav navbar-right" role="navigation">
+                    <div class="navbar-collapse collapse" id="navbar-collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="active nav-item">
+                                <a href="index.html">首页</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="borrow.html">借钱</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="return.html">还钱</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#why">教程手册</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="about.html">联系我们</a>
+                            </li>
+
+                            <li class="nav-item nav-item-cta last">
+                                <button type="button" class="btn btn-cta btn-cta-primary" data-toggle="modal" data-target="#signup-modal"
+                                    onclick="javascript:window.location.href='contract.html'">创建借钱合约</button>
+                            </li>
+                        </ul>
+                        <!--//nav-->
+                    </div>
+                    <!--//navabr-collapse-->
+                </nav>
+                <!--//main-nav-->
+            </div>
+            <!--//container-->
+        </header>
+        <!--//header-->
+
+        <!-- ******PROMO****** -->
+        <section id="promo" class="promo section">
+            <div class="container intro">
+                <h2 class="title">很多中国人被好友借钱困扰着
+                    <br />不借吧没面子，借钱吧难要回来</h2>
+                <p class="summary">社会上的老赖很多，借钱给别人时，要弄清对方到底是怎样的人，还有就是要求对方写张欠条，以免到时发生不必要的纠纷，别到时候变成“借钱的人是大爷，要钱的人是孙子。”“站着借钱，跪着讨债”</p>
+                <a class="btn btn-cta btn-cta-secondary" href="contract.html">创建借钱合约</a>
+            </div>
+            <!--//intro-->
+
+            <div class="fixed-container">
+                <div class="signup">
+                    <div class="container text-center">
+                        <h3 class="title">创建区块链借钱合约</h3>
+                        <p class="summary">永久不可更改的区块链借钱合约，解决你的借钱困扰</p>
+                        <form class="signup-form">
+                            <div class="form-group">
+                                <label class="sr-only" for="semail1">合约编号</label>
+                                <input id="contractCode" type="name" id="semail1" name="semail1" class="form-control" placeholder="请输入创建的借钱合约编号">
+                            </div>
+                            <button type="button" class="btn btn-cta btn-cta-primary" onclick="search()">查找</button>
+                        </form>
+                        <!--//signup-form-->
+                    </div>
+                    <!--//contianer-->
+                </div>
+                <!--//signup-->
+                <div class="social text-center">
+                    <div class="container">
+
+
+                    </div>
+                </div>
+                <!--//social-->
+            </div>
+            <div class="bg-slider-wrapper">
+                <div id="bg-slider" class="flexslider bg-slider">
+                    <ul class="slides">
+                        <li class="slide slide-1"></li>
+                        <li class="slide slide-2"></li>
+                        <li class="slide slide-3"></li>
+                    </ul>
+                </div>
+            </div>
+            <!--//bg-slider-wrapper-->
+        </section>
+        <!--//promo-->
+
+        <!-- ******WHY****** -->
+        <section id="why" class="why section">
+            <div class="container">
+                <h2 class="title text-center">区块链技术怎么解决借钱难题</h2>
+                <p class="intro text-center">使用借钱公约网借钱给朋友，您将不会失去您的友情</p>
+                <div class="row">
+                    <div class="benefits col-md-7 col-sm-6 col-xs-12">
+
+                        <div class="item clearfix">
+                            <div class="icon col-md-3 col-xs-12 text-center">
+                                <span class="pe-icon pe-7s-rocket"></span>
+                            </div>
+                            <!--//icon-->
+                            <div class="content col-md-9 col-xs-12">
+                                <h3 class="title">第一步，下载星云链钱包</h3>
+                                <p class="desc">如果您是第一次使用本站，还没有自己的账号，请先移驾下载
+                                    <a href="https://github.com/nebulasio/web-wallet" target="_blank">星云链钱包</a>下载好后，再主网(Mainnet)下新建一个钱包，请保持好您的地址和密码。</p>
+                            </div>
+                            <!--//content-->
+                        </div>
+                        <!--//item-->
+                        <div class="item clearfix">
+                            <div class="icon col-md-3  col-xs-12 text-center">
+                                <span class="pe-icon pe-7s-piggy"></span>
+                            </div>
+                            <!--//icon-->
+                            <div class="content col-md-9 col-xs-12">
+                                <h3 class="title">第二步，使用Chrome浏览器星云链钱包插件下载安装，移动端需要安装星云链app</h3>
+                                <p class="desc">插件的目的如同支付宝安装支付插件一个意思，通过更安全的方式让您完成区块链上的支付功能。下载地址：
+                                    <a href="https://github.com/nebulasio/WebExtensionWallet"
+                                        target="_blank">Chrome钱包插件</a> 链接中有安装教程，目前仅支持chrome。 移动端app下载地址：
+                                    <a href="https://nano.nebulas.io/index_cn.html" target="_blank">星云链App</a>
+                                </p>
+                            </div>
+                            <!--//content-->
+                        </div>
+                        <!--//item-->
+                        <div class="item clearfix">
+                            <div class="icon col-md-3  col-xs-12 text-center">
+                                <span class="pe-icon pe-7s-users"></span>
+                            </div>
+                            <!--//icon-->
+                            <div class="content col-md-9 col-xs-12">
+                                <h3 class="title">第三步，点击本站中的创建借钱合约</h3>
+                                <p class="desc">在创建借钱合约页面输入真实的相关信息，借钱人和被借钱人的姓名，身份证号，邮箱地址，金额，约定归还日期。
+                                    <a href="#" target="_blank">创建借钱合约</a>
+                                </p>
+                            </div>
+                            <!--//content-->
+                        </div>
+                        <!--//item-->
+                        <div class="item clearfix">
+                            <div class="icon col-md-3  col-xs-12 text-center">
+                                <span class="pe-icon pe-7s-bicycle"></span>
+                            </div>
+                            <!--//icon-->
+                            <div class="content col-md-9 col-xs-12">
+                                <h3 class="title">第四步，双方电子签字确认成立合约</h3>
+                                <p class="desc">请到借钱页面借钱人和被借钱人双方确认合约，即可完成合约签订
+                                    <a href="#" target="_blank">借钱</a>
+                                </p>
+                            </div>
+                            <!--//content-->
+                        </div>
+                        <!--//item-->
+                        <div class="item last clearfix">
+                            <div class="icon col-md-3  col-xs-12 text-center">
+                                <span class="pe-icon pe-7s-joy"></span>
+                            </div>
+                            <!--//icon-->
+                            <div class="content col-md-9 col-xs-12">
+                                <h3 class="title">第五步，借钱人还钱，被借钱人确认还钱</h3>
+                                <p class="desc">请到还钱页面，借钱人发布还钱签字，被借钱人确认签字，即可完成整个借钱合约</p>
+                            </div>
+                            <!--//content-->
+                        </div>
+                        <!--//item-->
+                        <div class="clearfix"></div>
+                        <div class="text-center">
+                            <a class="btn btn-cta btn-cta-secondary" href="about.html">联系我们</a>
+                        </div>
+                    </div>
+                    <div class="testimonials col-md-4 col-sm-5 col-md-offset-1 col-sm-offset-1 col-xs-12 col-xs-offset-0">
+                        <div class="item">
+                            <div class="quote-box">
+                                <blockquote class="quote">区块链技术，简称BT（Blockchain technology），也被称之为分布式账本技术，是一种互联网数据库技术，其特点是去中心化、公开透明，让每个人均可参与数据库记录。
+                                </blockquote>
+                                <!--//quote-->
+                                <p class="details">
+                                    <span class="name">百度百科“区块链”</span>
+                                </p>
+                                <i class="fa fa-quote-right"></i>
+                            </div>
+                            <!--//quote-box-->
+                        </div>
+                        <!--//item-->
+                        <div class="item">
+                            <div class="quote-box">
+                                <blockquote class="quote">区块链不可篡改特性：区块链的工作量证明机制、最长链机制保证了区块链上任一节点都是不可篡改的，也就保证了交易的不可篡改性。
+
+                                </blockquote>
+                                <!--//quote-->
+                                <p class="details">
+                                    <span class="name">从零认识区块链</span>
+                                </p>
+                                <i class="fa fa-quote-right"></i>
+                            </div>
+                            <!--//quote-box-->
+
+                        </div>
+                        <!--//item-->
+                        <div class="item last">
+                            <div class="quote-box">
+                                <blockquote class="quote">区块链不可伪造特性:这个得益于比特币的UTXO结构，英文全称Unspent Transaction Output，也就是未花费的交易输出。这种特性使得星云链世界里的每一笔转账，都能追溯到上一笔交易，也就保证了交易的真实性。
+                                </blockquote>
+                                <!--//quote-->
+                                <p class="details">
+                                    <span class="name">从零认识区块链</span>
+                                </p>
+                                <i class="fa fa-quote-right"></i>
+                            </div>
+                            <!--//quote-box-->
+
+                        </div>
+                        <!--//item-->
+                    </div>
+                </div>
+                <!--//row-->
+            </div>
+            <!--//container-->
+        </section>
+        <!--//why-->
+
+        <!-- ******SIGNUP****** -->
+        <section id="signup" class="signup">
+            <div class="container text-center">
+                <h2 class="title">请输入借钱合约编号</h2>
+                <p class="summary">合约需要双方验证才可生效</p>
+                <form class="signup-form" method="post" action="#">
+                    <div class="form-group">
+                        <label class="sr-only" for="semail2"></label>
+                        <input id="contractCode2" type="name" id="semail2" name="semail2" class="form-control" placeholder="请输入合约编号" required>
+                    </div>
+                    <button type="button" class="btn btn-cta btn-cta-primary" onclick="search2()">查找</button>
+                </form>
+                <!--//signup-form-->
+            </div>
+        </section>
+        <!--//signup-->
+
+    </div>
+    <!--//wrapper-->
+
+    <!-- ******FOOTER****** -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col col-md-5 col-sm-7 col-sm-12 about">
+                        <div class="footer-col-inner">
+                            <h3 class="title">关于我们</h3>
+                            <p>志在使用技术改变世界，是每个程序员的梦想。期待区块链技术能够给人们的生活工作学习更带来更多的价值，更多的效率。星云链技术一个入门使用简单，价值潜力巨大技术，我们看好他能给我们带来更好世界。</p>
+                            <p>
+                                <a class="more" href="about.html">了解更多
+                                    <i class="fa fa-long-arrow-right"></i>
+                                </a>
+                            </p>
+
+                        </div>
+                        <!--//footer-col-inner-->
+                    </div>
+                    <!--//foooter-col-->
+                    <div class="footer-col col-md-3 col-sm-4 col-md-offset-1 links">
+                        <div class="footer-col-inner">
+                            <h3 class="title">链接</h3>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="borrow.html">
+                                        <i class="fa fa-caret-right"></i>借钱</a>
+                                </li>
+                                <li>
+                                    <a href="return.html">
+                                        <i class="fa fa-caret-right"></i>还钱</a>
+                                </li>
+                                <li>
+                                    <a href="index.html#why">
+                                        <i class="fa fa-caret-right"></i>教程手册</a>
+                                </li>
+                                <li>
+                                    <a href="about.html">
+                                        <i class="fa fa-caret-right"></i>联系我们</a>
+                                </li>
+                                <li>
+                                    <a href="index.html#why">
+                                        <i class="fa fa-caret-right"></i>关于星云链</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--//footer-col-inner-->
+                    </div>
+                    <!--//foooter-col-->
+                    <div class="footer-col col-md-3 col-sm-12 contact">
+                        <div class="footer-col-inner">
+                            <h3 class="title">我们的信息</h3>
+                            <div class="row">
+                                <p class="tel col-md-12 col-sm-4">
+                                    <i class="fa fa-weibo"></i>@借钱公约网</p>
+                                <p class="email col-md-12 col-sm-4">
+                                    <i class="fa fa-envelope"></i>
+                                    <a href="#">zuiyuewentian@163.com</a>
+                                </p>
+                                <p class="email col-md-12 col-sm-4">
+                                    <i class="fa fa-qq"></i>
+                                    <a href="#">284965720</a>
+                                </p>
+                            </div>
+                        </div>
+                        <!--//footer-col-inner-->
+                    </div>
+                    <!--//foooter-col-->
+                </div>
+                <!--//row-->
+            </div>
+            <!--//container-->
+        </div>
+        <!--//footer-content-->
+        <div class="bottom-bar">
+            <div class="container">
+                <div class="row">
+                    <small class="copyright col-md-6 col-sm-6 col-xs-12">Copyright &copy; 2018.Company name All rights reserved.关于
+                        <a href="#" target="_blank" title="联系我们">联系我们</a>
+                    </small>
+                    <ul class="social col-md-6 col-sm-6 col-xs-12 list-inline">
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-qq"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-weixin"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-weibo"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <!--//social-->
+                </div>
+                <!--//row-->
+            </div>
+            <!--//container-->
+        </div>
+        <!--//bottom-bar-->
+    </footer>
+    <!--//footer-->
+
+
+    <!-- Javascript -->
+    <script type="text/javascript" src="assets/plugins/jquery-1.12.3.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/bootstrap-hover-dropdown.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/jquery-inview/jquery.inview.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/isMobile/isMobile.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/back-to-top.js"></script>
+    <script type="text/javascript" src="assets/plugins/jquery-placeholder/jquery.placeholder.js"></script>
+    <script type="text/javascript" src="assets/plugins/FitVids/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="assets/plugins/flexslider/jquery.flexslider-min.js"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+
+    <!-- Vimeo video API -->
+    <script src="http://a.vimeocdn.com/js/froogaloop2.min.js"></script>
+    <script type="text/javascript" src="assets/js/vimeo.js"></script>
+
+    <!--[if !IE]>-->
+    <script type="text/javascript" src="assets/js/animations.js"></script>
+    <!--<![endif]-->
+    <script>
+        function search() {
+            var value= document.getElementById("contractCode").value;
+            window.location.href="borrow.html?postmark="+value;
+        }
+        function search2() {
+            var value= document.getElementById("contractCode2").value;
+            window.location.href="borrow.html?postmark="+value;
+        }
+    </script>
+</body>
+
+</html>

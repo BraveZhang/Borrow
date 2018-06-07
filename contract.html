@@ -1,0 +1,446 @@
+﻿<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+<head>
+    <title>借钱公约网</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="favicon.ico">
+    <script type="text/javascript" src="js/flatpickr.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/flatpickr.min.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.mloading.css">
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="assets/plugins/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
+    <link rel="stylesheet" href="assets/plugins/animate-css/animate.min.css">
+    <link rel="stylesheet" href="assets/plugins/flexslider/flexslider.css">
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="home-page">
+
+    <!-- * Facebook Like button script starts -->
+    <div id="fb-root"></div>
+
+    <!-- * Facebook Like button script ends -->
+
+    <div class="wrapper">
+        <!-- ******HEADER****** -->
+        <header id="header" class="header">
+            <div class="container">
+                <h1 class="logo pull-left">
+                    <a href="index.html">
+                        <span class="logo-title">借钱公约网</span>
+                    </a>
+                </h1>
+                <!--//logo-->
+                <nav id="main-nav" class="main-nav navbar-right" role="navigation">
+                    <div class="navbar-collapse collapse" id="navbar-collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="active nav-item">
+                                <a href="index.html">首页</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="borrow.html">借钱</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="return.html">还钱</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="index.html#why">教程手册</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="about.html">联系我们</a>
+                            </li>
+
+                            <li class="nav-item nav-item-cta last">
+                                <button type="button" class="btn btn-cta btn-cta-primary" data-toggle="modal" data-target="#signup-modal" onclick="javascript:window.location.href='contract.html'">创建借钱合约</button>
+                            </li>
+                        </ul>
+                        <!--//nav-->
+                    </div>
+                    <!--//navabr-collapse-->
+                </nav>
+                <!--//main-nav-->
+            </div>
+            <!--//container-->
+        </header>
+        <!--//header-->
+
+        <!-- ******CONTACT MAIN****** -->
+        <section id="contact-main" class="contact-main section">
+
+            <div class="row text-center">
+                <div class="contact-form col-md-6 col-sm-12 col-xs-12 col-md-offset-3 col-sm-offset-0 col-xs-offset-0">
+                    <div id="hideDiv" class="alert alert-warning alert-dismissible" style="display: none;">
+                        <button type="button" class="close" data-dismiss="alert" onclick="closeDiv()"></button>
+                        <i class="fe fe-alert-triangle mr-2" aria-hidden="true"></i>
+                        <a id="message">message</a>
+                    </div>
+                    <div id="hiderightDiv" class="alert alert-icon alert-success" role="alert" style="display: none;">
+                        <button type="button" class="close" data-dismiss="alert" onclick="closerightDiv()"></button>
+                        <i class="fe fe-check mr-2" aria-hidden="true"></i>
+                        <a id="rightmessage">message</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--//contact-->
+        <section class="container contact-form-section">
+            <h3 class="title text-center">创建借钱合约</h3>
+            <p class="intro text-center">请认真仔细的填写资料，如填写资料错误，将有撰写人自己负责</p>
+            <div class="row text-center">
+                <div class="contact-form col-md-6 col-sm-12 col-xs-12 col-md-offset-3 col-sm-offset-0 col-xs-offset-0">
+                    <form class="form" id="contact-form" method="post" action="#">
+                        <div class="form-group name">
+                            <label class="sr-only" for="name">借钱人姓名</label>
+                            <input id="username" name="name" type="text" class="form-control" placeholder="借钱人姓名">
+                        </div>
+                        <!--//form-group-->
+                        <div class="form-group name">
+                            <label class="sr-only" for="name">借钱人身份证号</label>
+                            <input id="usercard" type="name" class="form-control" placeholder="借钱人身份证号">
+                        </div>
+                        <!--//form-group-->
+                        <div class="form-group email">
+                            <label class="sr-only" for="email">借钱人邮箱地址</label>
+                            <input id="usermail" type="email" class="form-control" placeholder="借钱人邮箱地址">
+                        </div>
+                        <!--//form-group-->
+                        <div class="form-group name">
+                            <label class="sr-only" for="name">被借钱人姓名</label>
+                            <input id="beusername" name="name" type="text" class="form-control" placeholder="被借钱人姓名">
+                        </div>
+                        <!--//form-group-->
+                        <div class="form-group name">
+                            <label class="sr-only" for="name">被借钱人身份证号</label>
+                            <input id="beusercard" type="name" class="form-control" placeholder="被借钱人身份证号">
+                        </div>
+                        <!--//form-group-->
+                        <div class="form-group email">
+                            <label class="sr-only" for="email">被借钱人邮箱地址</label>
+                            <input id="beusermail" type="email" class="form-control" placeholder="被借钱人邮箱地址">
+                        </div>
+                        <!--//form-group-->
+                        <div class="form-group name">
+                            <label class="sr-only" for="name">金额（元/人民币）</label>
+                            <input id="price" type="name" class="form-control" placeholder="金额（元/人民币）">
+                        </div>
+                        <!--//form-group-->
+                        <div class="form-group name">
+                            <label class="sr-only" for="name">约定归还日期</label>
+                            <input id="rdate" type="name" class="form-control" placeholder="约定归还日期">
+                        </div>
+                        <!--//form-group-->
+                        <button type="button" class="btn btn-block btn-cta-primary" onclick="confimCli()">创建</button>
+                    </form>
+                    <!--//form-->
+                </div>
+                <!--//contact-form-->
+            </div>
+            <!--//row-->
+        </section>
+
+
+
+    </div>
+    <!--//wrapper-->
+
+    <!-- ******FOOTER****** -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col col-md-5 col-sm-7 col-sm-12 about">
+                        <div class="footer-col-inner">
+                            <h3 class="title">关于我们</h3>
+                            <p>志在使用技术改变世界，是每个程序员的梦想。期待区块链技术能够给人们的生活工作学习更带来更多的价值，更多的效率。星云链技术一个入门使用简单，价值潜力巨大技术，我们看好他能给我们带来更好世界。</p>
+                            <p>
+                                <a class="more" href="about.html">了解更多
+                                    <i class="fa fa-long-arrow-right"></i>
+                                </a>
+                            </p>
+
+                        </div>
+                        <!--//footer-col-inner-->
+                    </div>
+                    <!--//foooter-col-->
+                    <div class="footer-col col-md-3 col-sm-4 col-md-offset-1 links">
+                        <div class="footer-col-inner">
+                            <h3 class="title">链接</h3>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="borrow.html">
+                                        <i class="fa fa-caret-right"></i>借钱</a>
+                                </li>
+                                <li>
+                                    <a href="return.html">
+                                        <i class="fa fa-caret-right"></i>还钱</a>
+                                </li>
+                                <li>
+                                    <a href="index.html#why">
+                                        <i class="fa fa-caret-right"></i>教程手册</a>
+                                </li>
+                                <li>
+                                    <a href="about.html">
+                                        <i class="fa fa-caret-right"></i>联系我们</a>
+                                </li>
+                                <li>
+                                    <a href="index.html#why">
+                                        <i class="fa fa-caret-right"></i>关于星云链</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--//footer-col-inner-->
+                    </div>
+                    <!--//foooter-col-->
+                    <div class="footer-col col-md-3 col-sm-12 contact">
+                        <div class="footer-col-inner">
+                            <h3 class="title">我们的信息</h3>
+                            <div class="row">
+                                <p class="tel col-md-12 col-sm-4">
+                                    <i class="fa fa-weibo"></i>@借钱公约网</p>
+                                <p class="email col-md-12 col-sm-4">
+                                    <i class="fa fa-envelope"></i>
+                                    <a href="#">zuiyuewentian@163.com</a>
+                                </p>
+                                <p class="email col-md-12 col-sm-4">
+                                    <i class="fa fa-qq"></i>
+                                    <a href="#">284965720</a>
+                                </p>
+                            </div>
+                        </div>
+                        <!--//footer-col-inner-->
+                    </div>
+                    <!--//foooter-col-->
+                </div>
+                <!--//row-->
+            </div>
+            <!--//container-->
+        </div>
+        <!--//footer-content-->
+        <div class="bottom-bar">
+            <div class="container">
+                <div class="row">
+                    <small class="copyright col-md-6 col-sm-6 col-xs-12">Copyright &copy; 2018.Company name All rights reserved.关于
+                        <a href="#" target="_blank" title="联系我们">联系我们</a>
+                    </small>
+                    <ul class="social col-md-6 col-sm-6 col-xs-12 list-inline">
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-qq"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-weixin"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-weibo"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <!--//social-->
+                </div>
+                <!--//row-->
+            </div>
+            <!--//container-->
+        </div>
+        <!--//bottom-bar-->
+    </footer>
+    <!--//footer-->
+
+    <!-- Javascript -->
+    <script type="text/javascript" src="assets/plugins/jquery-1.12.3.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/bootstrap-hover-dropdown.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/jquery-inview/jquery.inview.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/isMobile/isMobile.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/back-to-top.js"></script>
+    <script type="text/javascript" src="assets/plugins/jquery-placeholder/jquery.placeholder.js"></script>
+    <script type="text/javascript" src="assets/plugins/FitVids/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="assets/plugins/flexslider/jquery.flexslider-min.js"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+
+    <!-- Vimeo video API -->
+    <script src="http://a.vimeocdn.com/js/froogaloop2.min.js"></script>
+    <script type="text/javascript" src="assets/js/vimeo.js"></script>
+
+    <!--[if !IE]>-->
+    <script type="text/javascript" src="assets/js/animations.js"></script>
+    <!--<![endif]-->
+
+    <script type="text/javascript" src="dist/nebulas.js"></script>
+    <script type="text/javascript" src="dist/nebPay.js"></script>
+    <script type="text/javascript" src="js/createguid.js"></script>
+    <script type="text/javascript" src="js/jquery.mloading.js"></script>
+    <script>
+        document.getElementById("rdate").flatpickr();
+        "use strict";
+        var commonClass = new CommonClass();
+        var dappContactAddress = commonClass.GetAddress;
+        var nebulas = require("nebulas"), Account = Account, neb = new nebulas.Neb();
+        neb.setRequest(new nebulas.HttpRequest(commonClass.GetNetName));
+        var NebPay = require("nebpay");
+        var nebPay = new NebPay();
+        var serialNumber;
+        var postmarkCode = "";
+        $(function () {
+
+        });
+
+        function showLoading() {
+            $("body").mLoading({
+                text: "等待查询区块链执行结果",//加载文字，默认值：加载中...  
+                html: false,//设置加载内容是否是html格式，默认值是false  
+                content: "",//忽略icon和text的值，直接在加载框中显示此值  
+                mask: true//是否显示遮罩效果，默认显示  
+            });
+        }
+
+        function hideLoading() {
+            $("body").mLoading("hide");//隐藏loading组件
+        }
+
+        //发布
+        function confimCli() {
+            var username = $("#username").val();
+            var usercard = $("#usercard").val();
+            var usermail = $("#usermail").val();
+            var beusername = $("#beusername").val();
+            var beusercard = $("#beusercard").val();
+            var beusermail = $("#beusermail").val();
+            var price = $("#price").val();
+            var rdate = $("#rdate").val();
+            if (!username) {
+                ShowDiv("借钱人姓名不能为空！");
+                return;
+            }
+            if (!usercard) {
+                ShowDiv("借钱人身份证号不能为空！");
+                return;
+            }
+            if (!usermail) {
+                ShowDiv("借钱人邮箱地址不能为空！");
+                return;
+            }
+            if (!beusername) {
+                ShowDiv("被借钱人姓名不能为空！");
+                return;
+            }
+            if (!beusercard) {
+                ShowDiv("被借钱人身份证号不能为空！");
+                return;
+            }
+            if (!beusermail) {
+                ShowDiv("被借钱人邮箱地址不能为空！");
+                return;
+            }
+            if (!price) {
+                ShowDiv("金额不能为空！");
+                return;
+            }
+            if (!rdate) {
+                ShowDiv("约定归还日期不能为空！");
+                return;
+            }
+            console.log(rdate);
+            console.log(dappContactAddress);
+
+            var from = dappContactAddress;
+            var postmark = guid();
+            var date = GetNowDate();
+            var value = "0";
+            var nonce = "0";
+            var gas_price = "1000000";
+            var gas_limit = "2000000";
+            var callFunction = "addBorrow";
+            var callArgs = "[\"" + postmark + "\",\"" + username + "\",\"" + usercard + "\",\"" + usermail + "\",\"" + beusername + "\",\"" + beusercard + "\",\"" + beusermail + "\",\"" + price + "\",\"" + date + "\",\"" + rdate + "\"]";
+            console.log("callArgs:" + callArgs);
+            postmarkCode = postmark;
+            var serialNumber = nebPay.call(from, value, callFunction, callArgs, {
+                listener: function (resp) {
+                    showLoading();
+                    intervalQuery = setInterval(function () {
+                        funcIntervalQuery(resp.txhash);
+                    }, 3000);
+                }
+            });
+        }
+        //正确隐藏层
+        function closerightDiv() {
+            $("#hiderightDiv").hide();
+        }
+        //正确显示层
+        function ShowRightDiv(content) {
+            closeDiv();
+            $("#hiderightDiv").show();
+            $("#rightmessage").text(content);
+        }
+
+        //错误隐藏层
+        function closeDiv() {
+
+            $("#hideDiv").hide();
+        }
+        //错误显示层
+        function ShowDiv(content) {
+            closerightDiv();
+            $("#hideDiv").show();
+            $("#message").text(content);
+        }
+
+        function funcIntervalQuery(txhash) {
+            receiptTransaction(txhash).then(function (resp) {
+                var respObject = resp;
+                console.log(respObject);
+                if (respObject.status == 1) {
+                    clearInterval(intervalQuery);
+                    hideLoading();
+                    ShowRightDiv("创建成功,请保存好您的唯一合约编号：" + postmarkCode);
+                    var address = resp.from;
+                    console.log(address)
+
+                } else if (respObject.status == 0) {
+                    ShowDiv("创建出错,请重试");
+                }
+            }).catch(function (err) {
+                ShowDiv("创建出错,请重试");
+            })
+        }
+
+        var receiptTransaction = function (txhash) {
+            var promise = new Promise(function (resolve, reject) {
+                neb.api.getTransactionReceipt(txhash).then(function (resp) {
+                    resolve(resp);
+                }).catch(function (err) {
+                    console.log(err);
+                });
+            });
+            return promise
+        }
+
+    </script>
+
+</body>
+
+</html>
