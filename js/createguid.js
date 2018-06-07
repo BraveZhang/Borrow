@@ -1,8 +1,8 @@
 var CommonClass = function () {
     //合约地址
-    this.GetAddress = "n1nbb3AVUykiE87E5R72UnJ1CTeGbKpE9dR";
+    this.GetAddress = "n1qMTAXVHf8t3CoBztKtZPFX4c4n3cQ3DEA";
     //网络  测试网络 主网
-    this.GetNetName = "https://Testnet.nebulas.io";
+    this.GetNetName = "https://Mainnet.nebulas.io";
 }
 
 function S4() {
